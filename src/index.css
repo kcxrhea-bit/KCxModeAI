@@ -1,0 +1,125 @@
+:root {
+  color-scheme: dark;
+  --bg: #020817;
+  --bg-alt: #061426;
+  --panel: rgba(8, 20, 42, 0.92);
+  --border: rgba(56, 189, 248, 0.35);
+  --border-soft: rgba(147, 197, 253, 0.18);
+  --text: #ffffff;
+  --text-soft: #dbeafe;
+  --muted: #93a4bd;
+  --accent: #38bdf8;
+  --accent-strong: #60a5fa;
+  --shadow:
+    0 24px 70px rgba(0, 0, 0, 0.46),
+    0 0 36px rgba(56, 189, 248, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  --sans: 'Aptos', 'Segoe UI Variable', 'Trebuchet MS', 'Segoe UI', sans-serif;
+  --heading: 'Bahnschrift', 'Aptos Display', 'Segoe UI Variable', sans-serif;
+  --mono: 'Cascadia Code', 'Consolas', monospace;
+  font-family: var(--sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background:
+    radial-gradient(circle at top left, rgba(56, 189, 248, 0.2), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(96, 165, 250, 0.2), transparent 34%),
+    linear-gradient(180deg, #081b33, #061426 38%, #020817);
+  color: var(--text);
+}
+
+:root[data-theme='midnight'] {
+  --bg: #020817;
+  --bg-alt: #07172d;
+  --panel: rgba(10, 24, 48, 0.94);
+  --border: rgba(56, 189, 248, 0.32);
+  --border-soft: rgba(186, 230, 253, 0.16);
+  --text: #ffffff;
+  --text-soft: #dbeafe;
+  --muted: #9fb2cc;
+  --accent: #38bdf8;
+  --accent-strong: #bae6fd;
+  background:
+    radial-gradient(circle at top left, rgba(56, 189, 248, 0.16), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(147, 197, 253, 0.18), transparent 34%),
+    linear-gradient(180deg, #081b33, #061426 42%, #020817);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  background: transparent;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family: var(--heading);
+  font-weight: 700;
+  line-height: 1.05;
+  color: var(--text);
+}
+
+h1 {
+  font-size: clamp(2.2rem, 4vw, 3.1rem);
+}
+
+h2 {
+  font-size: clamp(1.8rem, 2vw, 2.4rem);
+}
+
+h3 {
+  font-size: 1.35rem;
+}
+
+h4 {
+  font-size: 1.08rem;
+}
+
+p,
+li,
+small,
+span,
+strong,
+input,
+select,
+textarea,
+button {
+  letter-spacing: 0.01em;
+}
+
+p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+small {
+  font-size: 0.87rem;
+}
+
+code {
+  font-family: var(--mono);
+}
